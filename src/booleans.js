@@ -59,9 +59,14 @@ const startsWith = (char, string) => {
 };
 
 const containsVowels = string => {
-  if(string.includes('a' || 'e' || 'i' || 'o' || 'u' || 'A' || 'E' || 'I' || 'O' || 'U'))
-  {return true;}
-  else {return false;}
+    const vowels = ["a", "e", "i", "o", "u"];
+    let foundVowels = 0
+    vowels.forEach(vowel => {
+      if (string.toLowerCase.includes(vowel)) {
+    foundVowels += 1;
+    }
+    });
+    return !!foundVowels
 };
 
 const isLowerCase = string => {
