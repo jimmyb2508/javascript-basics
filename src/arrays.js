@@ -1,11 +1,14 @@
 const getNthElement = (index, array) => {
- 
+ const animalIndex = array[index];
+ return animalIndex;
 };
 
 const arrayToCSVString = array => {
+  return array.join();
 };
 
 const csvStringToArray = string => {
+   return string.split(",");
 };
 
 const addToArray = (element, array) => {
@@ -13,19 +16,27 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
+   var removeItem = array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
+  const upCase = strings.map(a => {
+    return a.toUpperCase();
+  })
+  return upCase;
 };
 
 const reverseWordsInArray = strings => {
-};
+
+}
 
 const onlyEven = numbers => {
   // your code here
@@ -40,11 +51,11 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.split(' ').join('');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  
 };
 
 const sortByLastLetter = strings => {

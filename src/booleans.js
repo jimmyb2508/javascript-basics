@@ -59,20 +59,24 @@ const startsWith = (char, string) => {
 };
 
 const containsVowels = string => {
-    const vowels = ["a", "e", "i", "o", "u"];
+    return Boolean(string.match(/[aeiou]/gi));
+  
+  /*const vowels = ["a", "e", "i", "o", "u"];
     let foundVowels = 0
     vowels.forEach(vowel => {
       if (string.toLowerCase.includes(vowel)) {
     foundVowels += 1;
     }
     });
-    return !!foundVowels
+    return !!foundVowels*/
 };
 
 const isLowerCase = string => {
-  if (string == string.lowerCase())
+  return Boolean(!string.match(/[A-Z]/g));
+  
+  /* if (string == string.lowerCase())
   {return true;}
-  else {return false;}
+  else {return false;} */
 };
 
 module.exports = {
