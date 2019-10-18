@@ -35,19 +35,22 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-
-}
+  return strings.map(function(e){ return e.split("").reverse().join("");
+  });
+};
 
 const onlyEven = numbers => {
-  // your code here
+  return numbers.filter((e) => e % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArr = [...array]
+  newArr.splice(index, 1);
+  return newArr
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  return strings.filter((e) => (e.match(/^[aeiou]/gi)))
 };
 
 const removeSpaces = string => {
@@ -55,11 +58,14 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  
+  return numbers.reduce((total, amount) => total + amount);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  let newArr = strings.map(function (e) {return e.split("").reverse().join("")});
+  newArr.sort();
+  let answer = newArr.map(function (e) {return e.split("").reverse().join("")});
+  return answer;
 };
 
 module.exports = {
