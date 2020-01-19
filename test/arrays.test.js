@@ -25,7 +25,7 @@ describe("getNthElement", () => {
     expect(getNthElement(3, array)).toEqual("fox");
   });
 
-  xit("if n is greater than the number of elements, it cycles back to the start", () => {
+  it("if n is greater than the number of elements, it cycles back to the start", () => {
     expect(getNthElement(4, array)).toEqual("cat");
     expect(getNthElement(5, array)).toEqual("dog");
   });
@@ -153,7 +153,7 @@ describe("elementsStartingWithAVowel", () => {
     ).toEqual(["apple", "epple", "ipple", "opple", "upple"]);
   });
 
-  xit("is case insensitive", () => {
+  it("is case insensitive", () => {
     expect(
       elementsStartingWithAVowel([
         "Apple",

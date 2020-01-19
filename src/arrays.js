@@ -1,7 +1,11 @@
 const getNthElement = (index, array) => {
- const animalIndex = array[index];
- return animalIndex;
-};
+  if (index < array.length){
+    return array[index];
+  }
+   else if (index-(array.length) < array.length){
+     return array[index-(array.length)]
+   }
+ };
 
 const arrayToCSVString = array => {
   return array.join();

@@ -14,7 +14,7 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-  if (object.hasOwnProperty(property)) {
+  if (object.hasOwnProperty(property)) { 
   return true;
   } else return false;
 };
